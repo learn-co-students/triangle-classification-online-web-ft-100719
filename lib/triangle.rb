@@ -10,9 +10,9 @@ class Triangle
   end
   
   def valid_triangle?
-    sum_f_2 = @sides[0] + @sides[1]
-    sum_2_3 = @sides[1] + @sides[2]
-    sum_f_3 = @sides[0] + @sides[2]
+    sum_f_s = @sides[0] + @sides[1]
+    sum_s_t = @sides[1] + @sides[2]
+    sum_f_t = @sides[0] + @sides[2]
     
     if (@sides.all? {|side| side > 0}) && (sum_f_s > @sides[2] && sum_f_t > @sides[1] && sum_s_t > @sides[0])
       true
